@@ -72,6 +72,12 @@ tbody:before {
     scrollbar-width: none;  /* Firefox */
 }
 
+@media (min-width: 1024px) {
+    .hamburger {
+      display: none;
+    }
+  }
+
   
  
 

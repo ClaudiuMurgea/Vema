@@ -4,14 +4,14 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                @if(isset($result))
-                <x-hamburger></x-hamburger>
-                @endif
+                <div class="hamburger">
+                    <x-hamburger></x-hamburger>
+                </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden  sm:flex">  {{-- space-x-8 sm:ml-4  removed to make vema go above sidebar--}}
+                <div class="hidden  lg:flex text-center w-full">  {{-- space-x-8 sm:ml-4  removed to make vema go above sidebar--}}
                     <x-nav-link :href="route('home')" :active="request()->routeIs('dashboard')">
-                        <h1 class="font-extrabold text-blue-700 text-xl px-0 helvetica w-full flex justify-center">Vema Group LLC </h1>
+                        <h1 class="font-extrabold text-blue-700 text-xl px-0 helvetica text-center">Vema Group LLC </h1>
                     </x-nav-link>
                 </div>
             </div>

@@ -7,9 +7,19 @@
     x-on:keydown.escape.window="mobileSide = false"
     x-cloak
 >
+
     <div {{ $attributes->merge(['class' => 'm-auto bg-gray-200 shadow-2xl rounded-xl']) }}>
-        <button class="float-right text-white" aria-label="Close" x-on:click="mobileSide = false">✖</button>
+
+        <div class="px-2 flex align-items-baseline">
+        <button class="float-right order-2" aria-label="Close" x-on:click="mobileSide = false">✖</button>
+            <span class="text-center font-extrabold text-blue-700 text-xl px-0 helvetica order-1">
+                Vema GROUP LLC
+            </span> 
+        </div>
+
         <div class="p-8">
+           
+
             <div class="flex items-center">
                 <a class="hover:text-slate-900 hover:bg-violet-300 hover:rounded-lg w-full" href="javascript:void(0)" class="ml-2">
                     <div class="w-full hover:text-amber-200 text-white p-3">

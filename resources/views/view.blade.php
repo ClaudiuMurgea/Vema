@@ -19,9 +19,7 @@
 
                     <div class="flex pb-12">
                         @include('layouts.sidebar')
-                        <x-modal class="bg-violet-500" x-show="mobileSide">
-                          test
-                        </x-modal>
+                  
                         <div class="h-1/6 flex flex-col w-full">
                             <div class="flex inline-flex border-b border-gray-200 mr-10">
                                 <span class="w-2.5 h-5 py-10  bg-no-repeat bg-cover" style="background-image: url(../svg/ArrowBack.SVG); background-size:100% 100%"></span>

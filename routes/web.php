@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AgentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->middleware(['auth'])->name('home');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
 
-Route::get('/view', function () {
-    return view('view');
-})->middleware(['auth'])->name('view');
+Route::get('/', [AgentController::class, 'index'])->name('home');
+Route::get('/view', [AgentController::class, 'show'])->name('view');
+
+
+// Route::get('/view', function () {
+//     return view('layouts/view');
+// })->name('view');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->name('dashboard');
+
+// ->middleware(['auth'])
 
 require __DIR__.'/auth.php';

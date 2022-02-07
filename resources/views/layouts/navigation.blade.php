@@ -1,13 +1,15 @@
 <nav x-data="{ open: false }" class="bg-white border-2 border-b border-t border-gray-200 m-auto border" style="max-width: 1366px;">
     <!-- Primary Navigation Menu -->
-    <div class="mx-7 px-4 sm:px-6 lg:px-8 py-2">
+    <div class="ml-4 mr-6 px-4 sm:px-6 lg:px-8 py-2">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
+                @if(isset($result))
                 <x-hamburger></x-hamburger>
+                @endif
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:ml-4 sm:flex">
+                <div class="hidden  sm:flex">  {{-- space-x-8 sm:ml-4  removed to make vema go above sidebar--}}
                     <x-nav-link :href="route('home')" :active="request()->routeIs('dashboard')">
                         <h1 class="font-extrabold text-blue-700 text-xl px-0 helvetica w-full flex justify-center">Vema Group LLC </h1>
                     </x-nav-link>
@@ -70,8 +72,8 @@
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="px-4">
-                <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                {{-- <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div> --}}
+                {{-- <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div> --}}
             </div>
 
             <div class="mt-3 space-y-1">

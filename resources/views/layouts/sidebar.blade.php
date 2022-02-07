@@ -1,5 +1,5 @@
     <!-- Sidebar starts -->
-    <div  style="min-height:700px;max-width: 1366px;"  class="max-h-screen absolute lg:relative w-3/12 h-screen  hidden lg:block mr-12">
+    <div  style="min-height:700px;max-width: 1366px;"  class="max-h-screen absolute lg:relative w-3/12 h-screen  hidden lg:block xl:mr-12">
                     
         <ul>
             <li class="pl-6 pt-12 cursor-pointer text-white text-sm leading-3 font-bold tracking-normal pt-5 text-indigo-700 focus:text-indigo-700 focus:outline-none">
@@ -69,7 +69,7 @@
             </li>
         </ul>
 
-        <footer class="text-xs text-gray-400 pt-64">
+        <footer class="text-xs text-gray-400 pt-72">
             <p class="pl-12">(c) 2020 Vema Group LLC </p> 
             <div class="pl-12">
                 Built with  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="inline text-red-600 feather feather-activity"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
